@@ -7,7 +7,7 @@ module.exports = async function(deployer) {
   await deployer.deploy(Token);
   const token  = await Token.deployed()
   //Deploy Swap
-  await deployer.deploy(CryptoSwap);
+  await deployer.deploy(CryptoSwap, token.address);
   const cryptoSwap = await CryptoSwap.deployed()
 
   //Transfer everything to CryptoSwap(a milli)

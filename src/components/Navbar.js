@@ -14,7 +14,7 @@ class Navbar extends Component {
             老外數位貨幣外匯
           </a>
           <ul className = "navbar-nav px-3">
-            li
+            list
         </nav>
     );
     //style = "color:rgb(0,255,255)
